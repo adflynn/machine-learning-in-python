@@ -1,0 +1,19 @@
+Emma has n friends
+grid size NxN
+each friend is in some coordinate so that no one can see them
+each friend can only see in 8 directions (NSEW, D1234), straight lines
+cannot see through trees
+find initial positions for friends
+
+CSP:
+variables are grid locations {A11, A12, etc}
+domain for each is states {friend, tree, empty}
+describe constraints on each variable
+implement backtracking search to find assignment
+
+input:
+first line= N (friends) K (trees)
+next K lines= (x,y) coords of trees
+
+output:
+any order
